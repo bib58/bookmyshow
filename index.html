@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-section">
+            <img src="logo.png" class="logo">
+            <input type="text" class="search" placeholder="Search for Movies, Events, Plays ans Sports">
+        </div>
+        <div class="right-section">
+            <select class="city-select">
+                <option value="Del">Delhi</option>
+                <option value="Ind">Indore</option>
+                <option value="Mum">Mumbai</option>
+                <option value="Kol">Kolkata</option>
+                <option value="Pun">Pune</option>
+                <option value="Ban">Bangalore</option>
+                <option value="Bho">Bhopal</option>
+            </select>
+            <button class="sign-in">Sign in</button>
+            <img src="menu.png" class="menu-icon">
+        </div>
+    </nav>
+    <nav class="nav_2">
+        <div class="left">
+            <p>Movies</p>
+            <p>Stream</p>
+            <p>Events</p>
+            <p>Plays</p>
+            <p>Sports</p>
+            <p>Activities</p>
+        </div>
+        <div class="right">
+            <p>List Your Shows</p>
+            <p>Corporates</p>
+            <p>Offers</p>
+            <p>Gift Cards</p>
+        </div>
+    </nav>
+    <div class="banner">
+        <img src="banner_1.avif" class="slide active" />
+        <img src="banner_2.avif" class="slide" />
+    </div>
+
+    <h2 class="mov">Recommended Movies</h2>
+    <div class="movie-container-wrapper">
+        <div class="movies" id="scrollable">
+            <div class="card">
+                <div class="image">
+                    <img src="mov/HouseFull5.avif">
+                </div>
+                <div class="tit_1">HouseFull5</div>
+                <div class="tit_2">Comedy/Thriller</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/BhulChukMaaf.avif">
+                </div>
+                <div class="tit_1">Bhul Chuk Maaf</div>
+                <div class="tit_2">Comedy/Romance</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/dragon.avif">
+                </div>
+                <div class="tit_1">How To Train Your Dragon</div>
+                <div class="tit_2">Action</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/finaldetiantion.avif">
+                </div>
+                <div class="tit_1">The Final Destination</div>
+                <div class="tit_2">Suspense/Thriller</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/karatekid.avif">
+                </div>
+                <div class="tit_1">Karate Kid - Legend</div>
+                <div class="tit_2">Inspirational</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/Missionimposible.avif">
+                </div>
+                <div class="tit_1">Mission Impossible</div>
+                <div class="tit_2">Action</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/thuglife.avif">
+                </div>
+                <div class="tit_1">Thug Life</div>
+                <div class="tit_2">Drama</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/adventurr.avif">
+                </div>
+                <div class="tit_1">Adventure Of JetCat</div>
+                <div class="tit_2">Adventure</div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="mov/iceberg.avif">
+                </div>
+                <div class="tit_1">Adventure Of Iceberg</div>
+                <div class="tit_2">Adventure</div>
+            </div>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight()"><img src="arrow-right-solid.svg"></button>
+    </div>
+    
+    <div class="banner_3"><img class="banner_3" src="banner_3.avif"></div>
+
+    <h2 class="eve">Mind-blowing Events</h2>
+    
+    <div class="wrapper">
+        <div class="events" id="scro">
+            <div class="event"><img src="eve/event1.avif"></div>
+            <div class="event"><img src="eve/event2.avif"></div>
+            <div class="event"><img src="eve/event3.avif"></div>
+            <div class="event"><img src="eve/event4.avif"></div>
+            <div class="event"><img src="eve/event5.avif"></div>
+            <div class="event"><img src="eve/event6.avif"></div>
+            <div class="event"><img src="eve/event7.avif"></div>
+            <div class="event"><img src="eve/event8.avif"></div>
+            <div class="event"><img src="eve/event9.avif"></div>
+            <div class="event"><img src="eve/event10.avif"></div>
+            <button class="scroll-btn right" onclick="scro()"><img src="arrow-right-solid.svg"></button>
+        </div>
+    </div>
+
+    <img src="banner_4.avif" class="yup">
+    <div class="yup-bg"></div>  <!-- new background block -->
+
+    <div class="box">    
+        <div class="lapet_le">
+            <div class="friday" id="scrol">
+                <div class="prem">
+                    <img src="Premiere/prem_1.avif">
+                    <div class="tit_1_1">The Penguin Lessons</div>
+                    <div class="tit_2_2">English</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_2.avif">
+                    <div class="tit_1_1">Green Night</div>
+                    <div class="tit_2_2">Korean</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_3.avif">
+                    <div class="tit_1_1">Things will be different</div>
+                    <div class="tit_2_2">English</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_4.avif">
+                    <div class="tit_1_1">The Other Way Around</div>
+                    <div class="tit_2_2">Spanish/English</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_5.avif">
+                    <div class="tit_1_1">Marco-the invented truth</div>
+                    <div class="tit_2_2">Spanish</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_6.avif">
+                    <div class="tit_1_1">Two Roads</div>
+                    <div class="tit_2_2">Himachali</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_7.avif">
+                    <div class="tit_1_1">Six Jours</div>
+                    <div class="tit_2_2">French</div>
+                </div>
+                <div class="prem">
+                    <img src="Premiere/prem_8.avif">
+                    <div class="tit_1_1">Sinners</div>
+                    <div class="tit_2_2">English</div>
+                </div>
+                <button class="scroll-btn right" onclick="scrol()"><img src="arrow-right-solid.svg"></button> 
+            </div>
+        </div>
+    </div>
+
+    <p class="trend">Trending Searches right now</p>
+
+    <div class="trending-container">
+        <div class="trending-item">
+            <span class="title">Housefull 5</span>
+            <span class="category">Movies</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">From the World of John Wick: Ballerina</span>
+            <span class="category">Movies</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">Sitaare Zameen Par</span>
+            <span class="category">Movies</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">Saunkan Saunkanay 2</span>
+            <span class="category">Movies</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">Final Destination Bloodlines</span>
+            <span class="category">Movies</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">Worlds Of Wonder - Water Park</span>
+            <span class="category">Activities</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">Nehru Planetarium, Delhi</span>
+            <span class="category">Activities</span>
+        </div>
+        <div class="trending-item">
+            <span class="title">Raid 2</span>
+            <span class="category">Movies</span>
+        </div>
+    </div>
+
+    <footer>
+        <div class="last">
+            <pre><b>List Your Shows</b></pre>
+            <button>Contact Today!</button>
+        </div>
+        <div class="baksha"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quasi aperiam magnam sunt nulla dolorem ducimus ullam ipsam voluptatibus quas, provident autem reiciendis perspiciatis libero ex in, sed itaque eaque adipisci unde neque quo. Provident repudiandae quis magni nobis repellat sit eligendi dolore officiis maiores voluptatibus omnis, dignissimos, molestiae assumenda voluptates perferendis earum laudantium odio? Inventore ipsam quibusdam porro suscipit omnis, optio sed debitis ratione dolores non provident, ab rem enim exercitationem at velit hic repellat molestias ipsum, earum aliquam consequuntur voluptatibus repellendus ea! Minima facere aliquid magni ut in corporis atque necessitatibus commodi doloribus perspiciatis error ducimus, quidem nobis nemo ipsum. Dignissimos, nemo! Dolorem, necessitatibus minima asperiores odio dolores laborum quod doloribus, alias consequatur commodi unde obcaecati quam perspiciatis quo magnam omnis voluptatibus consectetur veritatis quasi sed amet, debitis perferendis. Quia quibusdam cumque id repudiandae ducimus, voluptate ut, ipsa assumenda tempora consequuntur iste est odit quasi vero ea quos nisi reprehenderit? Earum illo aspernatur nihil corrupti et ut quas quam, molestias modi eligendi consequuntur odio doloribus vel expedita repellendus voluptatem temporibus tempore rerum fugiat! Inventore veniam fugiat distinctio quaerat et ad quia enim corporis atque quisquam similique, corrupti repellendus iste accusamus dolor ab ipsa deleniti vero commodi eligendi magni tenetur ullam nam. Ducimus eos consectetur assumenda, explicabo sapiente ratione mollitia totam repellendus fugiat officiis sit, quasi ad. Nesciunt laudantium ab eaque praesentium iste, earum excepturi reprehenderit dolorum enim ad aliquid quod. Minus animi nobis, cupiditate ratione esse molestiae modi fugiat ipsum aliquam in facere. Dignissimos quis quaerat hic totam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident blanditiis, ratione repellat sint dolore quam perferendis dolorum vero molestias beatae, soluta repellendus est error tempore vel voluptate ducimus? Nostrum nisi cum dignissimos nobis reprehenderit quo eos necessitatibus, possimus id omnis delectus tempora rem provident vero consequuntur consequatur sequi distinctio, quaerat quisquam non nam amet voluptate magnam ut. Repudiandae autem explicabo cupiditate vero non quisquam eligendi aliquam? Blanditiis, at quasi. Facilis, distinctio nesciunt quasi reprehenderit suscipit explicabo omnis quis, exercitationem illum fugit impedit. Reiciendis debitis natus provident nisi cumque voluptate neque, excepturi accusantium facilis odit quos in enim cupiditate eius reprehenderit ea voluptatibus placeat velit! Rerum magnam tenetur nam maiores est tempore pariatur, quos labore rem ipsam, voluptatibus culpa deserunt minus ipsum neque, repellendus vitae nobis. Tempore ex nisi magnam recusandae sed harum eaque delectus placeat quisquam vero doloremque accusantium quos, aperiam optio officiis atque. Distinctio facere reprehenderit dignissimos quia architecto enim animi numquam velit iste quisquam accusamus voluptas quod, a nostrum deserunt excepturi praesentium cum culpa! Nobis libero expedita numquam enim tempore dolorem in illo adipisci dolore dolor, repellendus aperiam iste accusamus magni dolorum corporis eius neque qui placeat voluptatum soluta molestias assumenda officiis fuga! Autem, accusamus id molestias veniam nesciunt similique quis hic odit, repellat adipisci deleniti maiores. Magnam incidunt doloremque itaque voluptatum nobis cum eaque error blanditiis molestias? Quibusdam, laboriosam? Nihil totam fuga fugiat fugit eaque vero dolor odio veniam optio officia ratione, pariatur beatae, voluptate illum voluptas repellendus laborum vitae et natus vel perspiciatis expedita minima! Itaque!
+        </p></div>
+        <div class="line-container">
+            <div class="line"></div>
+            <div class="logo"><img src="logo.png" alt="Logo" /></div>
+            <div class="line"></div>
+        </div>
+    </footer>
+    <footer class="bahut_last">
+        <div class="last_logo"><img src="instagram.jpg"></div>
+        <div class="last_logo"><img src="x.png"></div>
+        <div class="last_logo"><img src="youtube.png"></div>
+        <div class="last_logo"><img src="facebook.jpg"></div>
+    </footer>
+    <footer class="sabse_last">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit voluptatum cum maxime impedit quia!</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+        <div>Lorem, ipsum dolor.</div>
+    </footer>
+
+
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const interval = 2500; // Change slide every 2.5 seconds
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.length;
+            showSlide(slideIndex);
+        }
+        showSlide(slideIndex);
+        setInterval(nextSlide, interval);
+
+        function scrollRight() {
+            document.getElementById('scrollable').scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        }
+        function scro() {
+            document.getElementById('scro').scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        }
+        function scrol() {
+            document.getElementById('scrol').scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
+
